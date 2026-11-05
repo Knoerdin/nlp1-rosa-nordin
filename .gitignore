@@ -1,0 +1,13 @@
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+
+# Model checkpoints and caches (large, reproducible from code)
+tmp/
+projects/*/models/
+projects/*/data/cache/
+
+# OS
+.DS_Store
