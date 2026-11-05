@@ -5,7 +5,7 @@ Everything downstream (part1.experiment, loglin, smlp) expects a list of
 part1.clslib.NamedClasses describing the label names.
 """
 from part1.clslib import NamedClasses
-
+import os
 
 def load_pairs(split: str = "train"):
     """
@@ -19,6 +19,9 @@ def load_pairs(split: str = "train"):
         pairs = list(zip(ds["text"], ds["label"]))
         return pairs, NamedClasses(names)
     """
+    from datasets import load_dataset
+    data = load_dataset("go_emotions", split=split)
+    
     raise NotImplementedError("Choose a dataset first (see 01_data_exploration.ipynb)")
 
 
