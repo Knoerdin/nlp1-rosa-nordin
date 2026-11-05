@@ -16,3 +16,8 @@ projects/*/data/cache/
 projects/project1/src/datasets/go-emotions/goemotions_1.csv
 projects/project1/src/datasets/go-emotions/goemotions_2.csv
 projects/project1/src/datasets/go-emotions/goemotions_3.csv
+
+# Environment files
+uv.lock
+pyproject.toml
+.venv
