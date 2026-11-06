@@ -8,7 +8,7 @@
     "4": 0.5449444383320498
   },
   "meta": {
-    "vocab_size": 10000,
+    "vocab_size": 58800,
     "hidden_dim": 128,
     "dropout": 0.1,
     "num_epochs": 10
