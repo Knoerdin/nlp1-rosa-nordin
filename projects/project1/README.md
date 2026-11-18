@@ -13,11 +13,11 @@ Full assignment text, deliverables and deadline: [assignment.md](assignment.md)
 | `01_data_exploration.ipynb` | Loading the dataset, statistics, label distribution, examples |
 | `02_experiments.ipynb` | Tokeniser, encoders, cross-validation runs; writes scores to `results/` |
 | `03_analysis.ipynb` | Reads `results/`: box plots, Bayesian/ROPE comparisons, error analysis |
-| `src/config.py` | Paths, random seed, number of folds |
-| `src/data.py` | Loading our dataset as `(text, label_id)` pairs + tokeniser training corpus |
-| `src/encoders.py` | Feature representations: token indicators, bag-of-words, our third one |
-| `src/models.py` | Our third architecture |
-| `src/results_io.py` | Saving / loading cross-validation scores (JSON) |
+| `../src/config.py` | Paths, random seed, number of folds |
+| `../src/data.py` | Loading our dataset as `(text, label_id)` pairs + tokeniser training corpus |
+| `../src/encoders.py` | Feature representations: token indicators, bag-of-words, our third one |
+| `../src/models.py` | Our third architecture |
+| `../src/results_io.py` | Saving / loading cross-validation scores (JSON) |
 | `results/` | One JSON per experiment, named `<architecture>__<representation>.json` (committed) |
 | `figures/` | Plots for slides and blog (committed) |
 | `models/` | Trained checkpoints (git-ignored, regenerate by rerunning `02`) |
@@ -34,7 +34,7 @@ Full assignment text, deliverables and deadline: [assignment.md](assignment.md)
 | `clslib` | `NamedClasses`, `Encoder` base class |
 
 Note: `part1.clslib.TokenIndicator` reads a global `tokenizer` variable in
-`__len__`; `src/encoders.py` has a fixed copy, use that one.
+`__len__`; `../src/encoders.py` has a fixed copy, use that one.
 
 ## Running
 

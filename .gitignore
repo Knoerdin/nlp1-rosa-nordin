@@ -13,9 +13,12 @@ projects/*/data/cache/
 .DS_Store
 
 # Data
-projects/project1/src/datasets/go-emotions/goemotions_1.csv
-projects/project1/src/datasets/go-emotions/goemotions_2.csv
-projects/project1/src/datasets/go-emotions/goemotions_3.csv
+projects/src/datasets/go-emotions/goemotions_1.csv
+projects/src/datasets/go-emotions/goemotions_2.csv
+projects/src/datasets/go-emotions/goemotions_3.csv
+
+# Models
+projects/src/embedders/
 
 # Environment files
 uv.lock
