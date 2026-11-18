@@ -1,7 +1,7 @@
 """Paths and shared settings for Project 1."""
 from pathlib import Path
 
-PROJECT_DIR = Path(__file__).resolve().parents[1]   # projects/project1
+PROJECT_DIR = Path(__file__).resolve().parents[1] / "project1"   # projects/project1
 REPO_ROOT = PROJECT_DIR.parents[1]                  # nlp1-rosa-nordin
 
 RESULTS_DIR = PROJECT_DIR / "results"

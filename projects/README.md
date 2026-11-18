@@ -8,13 +8,13 @@ practical never conflicts. All of **our** work lives here, one folder per projec
 projects/
 ├── README.md          ← you are here: overview, deadlines, conventions
 ├── AI_USAGE.md        ← running log of AI assistance (needed for the blog post)
+├── src/               ← our reusable code, shared by all projects (imported by the notebooks)
 └── project1/          ← everything for Project 1 (info, code, results, slides)
     ├── README.md          assignment summary, checklist, decisions log
     ├── assignment.md      original assignment text + course rules
     ├── 01_data_exploration.ipynb
     ├── 02_experiments.ipynb
     ├── 03_analysis.ipynb
-    ├── src/               our reusable code (imported by the notebooks)
     ├── results/           CV scores as JSON  (committed: small, needed for analysis)
     ├── figures/           plots for slides / blog (committed)
     ├── models/            trained checkpoints (git-ignored, regenerate from code)
@@ -35,12 +35,12 @@ Submit via Canvas only. One submission counts for the whole group.
 ## Conventions
 
 - Notebooks are run **from their own folder** (JupyterLab / VS Code do this by
-  default). The first cell puts the repo root on `sys.path`, so both
+  default). The first cell puts the repo root and `projects/` on `sys.path`, so both
   `from part1 import ...` (course code) and `from src import ...` (our code) work.
-- Anything reused across notebooks goes in `src/`, not copy-pasted between cells.
+- Anything reused across notebooks goes in `projects/src/`, not copy-pasted between cells.
 - Every experiment writes its scores to `results/<name>.json`; the analysis
   notebook only reads those files, so it can be rerun without retraining.
-- Fix random seeds (`src/config.py`) so results are reproducible.
+- Fix random seeds (`projects/src/config.py`) so results are reproducible.
 - Log AI help in `AI_USAGE.md` as you go — much easier than reconstructing it later.
 
 ## Setup
